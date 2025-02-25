@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>File Upload and Dowload</title>
+	<style>
+		body{
+			font-family: Arial,sans-serif;
+			text-align-last: center	;
+			margin: 50px;
+		}
+		.btn{
+			display: inline-block;
+			padding: 10px 20px;
+			margin: 10px;
+			font-size: 16px;
+			color: white;
+			background-color: #007bff;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+		.btn:hover{
+			background-color: #0056b3;
+		}
+		input[type="file"]{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<label for="fileUpload" class="btn">Upload File</label>
+	<input type="File" id="fileUpload">
+
+	<a href="example.txt" download class="btn">Download File</a>
+
+</body>
+</html>

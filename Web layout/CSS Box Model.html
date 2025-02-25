@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div{
+			background-color: lightgrey;
+			width: 600px;
+			border:15px solid green;
+			padding: 50px;
+			margin: 20px;
+		}
+		.pagination{
+			display: inline-block;
+		}
+		.pagination a{
+			color: black;
+			float: left;
+			padding: 8px 16px;
+			text-decoration: none;
+			border: 1px solid #ddd;
+		}
+		.pagination a.active{
+			background-color: #4CAF50;
+			color: white;
+			border: 1px solid #4CAF50;
+		}
+		.pagination a:hover:not(.active){
+			background-color: #ddd;
+		} 
+		.pagination a:first-child{
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		.pagination a:last-child{
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}	
+	</style>
+</head>
+<body>
+<h2 style="background-color: lightgrey;
+			padding: 5px;
+			text-align: center;">
+		Demonstrating the Box Model</h2>
+<p>The CSS model is essentially a box that wraps around every html element. It consists of: borders, padding, margins and the actual content.</p>
+<div>What is a computer? A six-year-old called a computer "radio, movie, and television combined!"A ten-year-old described a compuer as "a television set you can talk to." The ten-year-old's definition is closer but still oes not recognize the computer as a machine that has the power to make changes.<br>A computer is a machine that can be programmed to accept data(input), process it into useful information(output), and store it away(in a secondary storage device)for safekeeping or late reuse. The processing of input to output is directed by the software but performed by the hardware.<br>
+	<img border="4" src="C:\Users\Admin\Desktop\Celine\webpage\pic.jpg" height="150" width="250" 
+	>
+	<img border="4" src="C:\Users\Admin\Desktop\Celine\webpage\download.jpg " height="150" width="250">
+	<hr size =10 color=orange>
+	<form method="get" action="">
+	please enter your firstname here:<input type="text" name="firstname" size="50" max="50"></br>
+	please enter your secondname:<input type="text" name="secondname" size="50" max="50">
+	please enter your date of birth:<input type="date" name="date" pattern="00-00-0000"> 
+</form></pre>
+	<hr size =10 color=orange>
+	<br>
+		
+		please enter your comment here:<textarea placeholder="please enter your comment here" type =textarea name="comment" rows="10" cols="10" maxlength="10"></textarea>
+	<hr size =10 color=orange>
+	select gender here:<input type="checkbox" name="male"> male
+				<input type="checkbox" name="female"> female
+	<br>
+	select your nationality:<select name="nationality">
+		<option></option>
+		<option>Kenyan</option>
+		<option>Tanzanian</option>
+		<option>Rwandanese</option>
+		<option>other</option></select>
+	</br>
+	<br>
+	What is your marital status:<input type="radio" name="single">single
+								<input type="radio" name="married">Married
+								<input type="radio" name="Divorced">Divorced
+
+	<hr size =10 color=orange>
+		
+		please select subject of your choice here:<select name="courses">
+			<option></option>
+			<option> computer</option>
+			<option> graphics</option>
+			<option> programming</option>
+		</select><br>
+	Enter the date of applying:<input type="date" name="date" pattern="00-00-0000">	
+	<hr size =10 color=orange>
+	please enter your password here:<input type="password"name="password">
+	<hr size =10 color=orange>
+	please submit data:<input type="submit" value="submit">
+	<br> please cancel your form:<input type="reset" value="reset"></br>
+</div>
+<div class="pagination">
+		<a href="C:\Users\Admin\Desktop\Celine\webpage\Classic htmlForm.html">&laquo;</a>
+		<a href="CSS Image Gallery.html">1</a>
+		<a class="active" href="Form on image.html">2</a>
+		<a href="test.html">3</a>
+		<a href="unequal columns.html">4</a>
+		<a href="Pagination.html">5</a>
+		<a href="Image text blocks.html">6</a>
+		<a href="C:\Users\Admin\Desktop\Celine\webpage\Mobile.html">&raquo;</a>
+	</div>
+</body>
+</html>

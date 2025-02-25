@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>image</title>
+	<style>
+		.container{
+			position: relative;
+			text-align: center;
+			color: white;
+		}
+		.bottom-left{
+			position: absolute;
+			bottom: 8px;
+			left: 16px;
+		}
+		.top-left{
+			position: absolute;
+			top: 8px;
+			left: 16px;
+		}
+		.top-right{
+			position: absolute;
+			top: 8px;
+			right: 16px;
+			color: orange;
+		}
+		.bottom-right{
+			position: absolute;
+			bottom: 8px;
+			right: 16px;
+		}
+		.centered{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size:50px;
+			font-family:arial black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<h2>Image Text</h2>
+<p>Hoe to place text over an image</p>
+<div class="container">
+	<img src="C:\Users\Admin\Desktop\Celine\Web layout\pic2.jpeg" alt="landscapes" style="width:100%">
+	<div class="bottom-left">Green land scape</div>
+  <div class="top-left">Blue skies</div>
+  <div class="top-right">Clouds</div>
+  <div class="bottom-right">Soil</div>
+  <div class="centered">Faraway Mountains</div>
+</div>
+
+</body>
+</html>

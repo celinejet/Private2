@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+.pagination{
+      display: inline-block;
+    }
+    .pagination a{
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      border: 1px solid #ddd;
+    }
+    .pagination a.active{
+      background-color: #4CAF50;
+      color: white;
+      border: 1px solid #4CAF50;
+    }
+    .pagination a:hover:not(.active){
+      background-color: #ddd;
+    } 
+    .pagination a:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .pagination a:last-child{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>In a computer the processor is the center of activity. The processor, as we noted, is also called the central processing unit (CPU). The central processing unit consists of electronic circuits that interpret and execute program instructions, as well as communicate with the input, output, and storage devices.
+It is the central processing unit that actually transforms data into information. Data is the raw material to be processed by a computer. Such material can be letters, numbers, or facts like grades in a class, baseball batting averages, or light and dark areas in a photograph. Processed data becomes information, data that is organized, meaningful, and useful. In school, for instance, an instructor could enter various student grades (data), which can be processed to produce final grades and perhaps a class average (information). Data that is perhaps uninteresting on its own may become very interesting once it is converted to information. The raw facts (data) about your finances, such as a paycheck or a donation to charity or a medical bill may not be captivating individually, but together, these and other acts can be processed to produce the refund or amount you owe on your income tax return (information).
+</p>
+    <p>Computer memory, also known as primary storage, is closely associated with the central processing unit but separate from it. Memory holds the data after it is input to the system and before it is processed; also, memory holds the data after it has been processed but before it has been released to the output device. In addition, memory holds the programs (computer instructions) needed by the central processing unit.
+  </div>
+  
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+<div class="pagination">
+    <a href="C:\Users\Admin\Desktop\Celine\webpage\Classic htmlForm.html">&laquo;</a>
+    <a href="CSS Image Gallery.html">1</a>
+    <a class="active" href="Form on image.html">2</a>
+    <a href="test.html">3</a>
+    <a href="unequal columns.html">4</a>
+    <a href="CSS Box Model.html">5</a>
+    <a href="Image text blocks.html">6</a>
+    <a href="C:\Users\Admin\Desktop\Celine\webpage\Mobile.html">&raquo;</a>
+  </div>
+
+</body>
+</html>

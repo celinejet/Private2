@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Web layout</title>
+	<style >
+		body {
+  margin:5px;
+}
+
+/* Style the header */
+.header {
+  background-color: #b7b7b7;
+  padding:5px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right:5px;
+  margin-top:5px;
+  color:#d44557;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  margin-left: 5px;
+  margin-right:5px;
+  margin-top:5px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #a4aa4a;
+  color: black;
+}
+/*Create three equal columns that float next to each other */
+.column{
+  float: left;
+  width:25.33%;
+  padding: 15px;
+}
+/*Clear floats after the columns*/
+.row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+/*Responsive layout-makes the three columns stack on top of each other instead of next to each other*/
+@media screen and (max-width:600px){
+  .column{
+    width: 100%;
+  }
+} 
+/*style the footer*/
+.footer{
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+.pagination{
+      display: inline-block;
+    }
+    .pagination a{
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      border: 1px solid #ddd;
+    }
+    .pagination a.active{
+      background-color: #4CAF50;
+      color: white;
+      border: 1px solid #4CAF50;
+    }
+    .pagination a:hover:not(.active){
+      background-color: #ddd;
+    } 
+    .pagination a:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .pagination a:last-child{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+	</style>
+</head>
+<body>
+<div class="header">
+  <h1>CELINE'S WEBPAGE</h1>
+  <p>Resize the browser window to see the responsive effects.</p>
+</div>
+<div class="topnav">
+  <a href="C:\Users\Admin\Desktop\Celine\webpage\mobile.html">Home</a>
+  <a href="C:\Users\Admin\Desktop\Celine\webpage\types of computers.html">About us</a>
+  <a href="C:\Users\Admin\Desktop\Celine\webpage\classic html.html">Contact</a>
+  <a href="C:\Users\Admin\Desktop\Celine\webpage\pictures\images.jpg">Images</a>
+  <a href="C:\Users\Admin\Desktop\Celine\webpage\video 1.html">video</a>
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>A computer has three main components:hardware, software, and people.The equipment associated with a computer system is called a hardware. Software is a set of instuctions that tells the hardware what to do. People, however, are the most important component of a computer system-people use the power of the computer for some purpose. In fact, this course will show you that the computer can be a tool fo just about anyone from a business person, to an artist, to a housekeeper, to a student- an incredibly powerful and flexible tool.
+    <br>Software is actually a computer program. To be more specific, a program is a set of step-by-step instructions that directs the computer to do the tasks you want it to do and to produce the results you want.A computer programmer is a person who writes programs. Most of us do not write programs, we use programs wrtten by someone.
+  </p>
+  </div>
+  <div class="column">
+    <h2>Column</h2>
+    <p>What is a computer? A six-year-old called a computer "radio, movie, and television combined!"A ten-year-old described a compuer as "a television set you can talk to." The ten-year-old's definition is closer but still oes not recognize the computer as a machine that has the power to make changes.
+    <br>A computer is a machine that can be programmed to accept data(input), process it into useful information(output), and store it away(in a secondary storage device)for safekeeping or late reuse. The processing of input to output is directed by the software but performed by the hardware.
+    </p>
+  </div>
+  <div class="column">
+    <h2>Column</h2>
+    <p>In a computer the processor is the center of activity. The processor, as we noted, is also called the central processing unit(CPU). The central processing unit consist of electrical circuits that interpret and execute program istructions,as well as communicate with the input, output, and storage devices
+    <br>It is the central processing unit that actually transforms data into information. Data is the raw material to be processed by a computer. Such material can be letters, numbers, or facts like grades in a class, baseball batting averages, or light and dark areas in a photograph. Processed data becomes iformation, data that is organized, meaningful, and useful.In school, for instance, an instructor could enter various student grades (data), which can be processed to produce final grades and perhaps a class average (information). Data that is perhaps uninteresting on its own may become very interesting once it is converted to information. The raw facts (data) about your finances, such as a paycheck or a donation to charity or a medical bill may not be captivating individually, but together, these and other acts can be processed to produce the refund or amount you owe on your income tax return (information).
+    </p>
+  </div>
+</div>
+<div class="pagination">
+    <a href="C:\Users\Admin\Desktop\Celine\webpage\Classic htmlForm.html">&laquo;</a>
+    <a href="CSS Image Gallery.html">1</a>
+    <a class="active" href="Form on image.html">2</a>
+    <a href="test.html">3</a>
+    <a href="unequal columns.html">4</a>
+    <a href="CSS Box Model.html">5</a>
+    <a href="Image text blocks.html">6</a>
+    <a href="C:\Users\Admin\Desktop\Celine\webpage\Mobile.html">&raquo;</a>
+  </div>
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>

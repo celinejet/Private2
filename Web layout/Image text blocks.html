@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page</title>
+	<style>
+		.container{
+			position: relative;
+			font-family: Algerian;
+		}
+		.text-block{
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			background-color: black;
+			color: orange;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.pagination{
+			display: inline-block;
+		}
+		.pagination a{
+			color: black;
+			float: left;
+			padding: 8px 16px;
+			text-decoration: none;
+			border: 1px solid #ddd;
+		}
+		.pagination a.active{
+			background-color: #4CAF50;
+			color: white;
+			border: 1px solid #4CAF50;
+		}
+		.pagination a:hover:not(.active){
+			background-color: #ddd;
+		} 
+		.pagination a:first-child{
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		.pagination a:last-child{
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Image TextBlocks</h2>
+	<p>How to place text blocks over an image</p>
+	<div class="container">
+		<img src="C:\Users\Admin\Desktop\Celine\Web layout\pic1.jpeg" alt="Nature" style="width:100%">
+		<div class="text-block">
+			<h4>Nature</h4>
+			<p>What a beautiful sunrise!</p>
+		</div>
+	</div>
+	<div class="pagination">
+		<a href="C:\Users\Admin\Desktop\Celine\webpage\Classic htmlForm.html">&laquo;</a>
+		<a href="CSS Image Gallery.html">1</a>
+		<a class="active" href="Form on image.html">2</a>
+		<a href="test.html">3</a>
+		<a href="unequal columns.html">4</a>
+		<a href="CSS Box Model.html">5</a>
+		<a href="Image text blocks.html">6</a>
+		<a href="C:\Users\Admin\Desktop\Celine\webpage\Mobile.html">&raquo;</a>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>active links</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		ul{
+			list-style-type: none;
+			margin: 5px;
+			padding: 5px;
+			overflow: hidden;
+			background-color:slateblue;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover:not(.active){
+			background-color: lightblue;
+		}
+		.active{
+			background-color: grey;
+		}
+		@media screen and (max-width:500px){
+			.navbar a{
+				float: none;
+				display: block;
+			}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+		<li><a class="active" href="#news"><i class="fa fa-fw fa-newspaper"></i>News</a></li>
+		<li><a href="#contact"><i class="fa fa-fw fa-phone"></i>Contact</a></li>
+		<li><a href="#about"><i class="fa fa-fw fa-question mark"></i>About</a></li>
+	</ul>
+
+</body>
+</html>
